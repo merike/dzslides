@@ -69,6 +69,17 @@
   section[aria-selected] { left: 0; }
   /* After */
   section[aria-selected] ~ section { left: +150% }
+
+  /* Uncomment for slide numbers
+  body { counter-reset: section 0; }
+  section { counter-increment: section; }
+  ul:after  {
+    content: counter(section);
+    position: absolute;
+    bottom: 0.5em;
+    right: 0.5em;
+  }
+  ul ul:after, ul ul ul:after { content: ""; } */
 </style>
 
 
