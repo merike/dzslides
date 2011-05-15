@@ -73,13 +73,15 @@
   /* Uncomment for slide numbers
   body { counter-reset: section 0; }
   section { counter-increment: section; }
-  ul:after  {
+  section > *:last-child:after  {
     content: counter(section);
     position: absolute;
     bottom: 0.5em;
     right: 0.5em;
   }
-  ul ul:after, ul ul ul:after { content: ""; } */
+  section:first-child > *:last-child:after {
+    content: "";
+  } */
 </style>
 
 
